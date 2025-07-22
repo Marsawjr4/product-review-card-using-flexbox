@@ -1,4 +1,4 @@
-# Frontend Mentor - Product preview card component
+# Frontend Mentor - [Product preview card component](https://marsawjr4.github.io/product-review-card-using-flexbox/)
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
