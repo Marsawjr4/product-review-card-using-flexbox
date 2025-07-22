@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+.card {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-image-desktop {
+    display: none;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-content p{
+    color: hsl(228, 12%, 48%);
+    
+}
+
+.card-content .product-category {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.card-content .product-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.card-prices {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.card-prices h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.card-prices p {
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    padding-left: 20px;
+}
+
+.cart-button {
+    padding: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
+button img {
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .product-image-mobile {
+        display: none;
+    }
+
+    .product-image-desktop {
+        display: block;
+    }
+
+    .image-container {
+        height: 100%;
+        width: 150%
+    }
+
+    .card {
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .product-category {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .card-content {
+        padding: 20px 20px 0 20px;
+    }
+
+    .card-content h1 {
+        line-height: 1;
+        padding: 10px 0;
+    }
+
+    .product-description {
+        padding-bottom: 10px;
+    }
+
+    .card-prices {
+        padding: 0;
+    }
+
+
+}
